@@ -17,7 +17,13 @@ bindkey '\e[B' history-search-forward
 # source antidote
 # Set antidote home to local cache
 export ANTIDOTE_HOME=~/.cache/antidote
-source /usr/local/opt/antidote/share/antidote/antidote.zsh
+if [[ $(uname) == "Darwin" ]]; then
+  source /usr/local/opt/antidote/share/antidote/antidote.zsh
+elif command -v apt > /dev/null; then
+  source ~/.config/antidote/antidote.zsh
+elif
+  source ~/.antidote/antidote/antidote.zsh
+fi
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
