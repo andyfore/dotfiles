@@ -21,7 +21,7 @@ if [[ $(uname) == "Darwin" ]]; then
   source /usr/local/opt/antidote/share/antidote/antidote.zsh
 elif command -v apt > /dev/null; then
   source ~/.config/antidote/antidote.zsh
-elif
+else
   source ~/.antidote/antidote/antidote.zsh
 fi
 
