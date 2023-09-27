@@ -9,6 +9,7 @@ se-jaeger/zsh-activate-py-environment
 weizard/assume-role
 webyneter/docker-aliases
 ptavares/zsh-terraform
+Dbz/kube-aliases
 
 romkatv/zsh-bench kind:path
 olets/zsh-abbr    kind:defer
