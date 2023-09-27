@@ -28,6 +28,3 @@ zsh-users/zsh-history-substring-search
 
 # Application specific
 dashixiong91/zsh-vscode
-
-#ohmyzsh
-ohmyzsh/ohmyzsh path:plugins/asdf

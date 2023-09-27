@@ -55,4 +55,4 @@ if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     fi
 fi
 
-"$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/asdf.sh"
