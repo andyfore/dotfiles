@@ -18,6 +18,11 @@ config.color_scheme = 'nord'
 
 config.default_prog = { 'nu', '-l' }
 
+config.hide_tab_bar_if_only_one_tab = false
+
+config.initial_cols = 155
+config.initial_rows = 45
+
 config.font =
   wezterm.font('JetBrainsMono Nerd Font')
 
