@@ -1,0 +1,5 @@
+[user]
+        name = Andrew Fore
+        email = andrewrfore@gmail.com
+[core]
+        excludesfile = /Users/andyfore/.gitignore

@@ -1,0 +1,19 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- link:
+    ~/.profile: bash/profile_mac
+    ~/.bashrc: bash/bashrc_mac
+    ~/.gitconfig: git/gitconfig_personal
+    ~/.config/starship.toml: starship/starship_mac.toml
+    ~/Library/Application Support/nushell/config.nu: nushell/config.nu
+    ~/Library/Application Support/nushell/env.nu: nushell/env.nu
+    ~/Library/Application Support/nushell/login.nu: nushell/login.nu
+
+- create:
+    - ~/.vim/undo-history
+    - ~/Library/Application Support/nushell
