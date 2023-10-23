@@ -10,3 +10,7 @@ zstyle :compinstall filename '/Users/andyfore/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+source <(carapace _carapace)
