@@ -17,3 +17,4 @@
 - create:
     - ~/.vim/undo-history
     - ~/Library/Application Support/nushell
+    - ~/Library/Application Support/nushell/themes
