@@ -9,7 +9,6 @@
     ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
     ~/.config/starship.toml: starship/starship_test.toml
     ~/.gitconfig: git/gitconfig_work
-    ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc
 
