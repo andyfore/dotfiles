@@ -16,7 +16,7 @@ end
 -- config.color_scheme = 'AdventureTime'
 config.color_scheme = 'nord'
 
-config.default_prog = { 'nu', '-l' }
+config.default_prog = { 'zsh', '-l' }
 
 config.hide_tab_bar_if_only_one_tab = false
 
