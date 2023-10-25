@@ -18,7 +18,6 @@
     ~/.config/zellij/themes/tokyo-night.kdl: zellij/themes/tokyo-night.kdl
     ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.zshrc: zsh/zshrc
     ~/.zsh_plugins.txt: zsh/zsh_plugins.txt
 
 - create:

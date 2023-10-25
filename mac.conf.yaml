@@ -9,6 +9,7 @@
     ~/.profile: bash/profile_mac
     ~/.bashrc: bash/bashrc_mac
     ~/.gitconfig: git/gitconfig_personal
+    ~/.zshrc: zsh/zshrc_mac
 
 - create:
     - ~/.vim/undo-history
