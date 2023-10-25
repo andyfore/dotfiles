@@ -9,7 +9,6 @@
     ~/.profile: bash/profile_mac
     ~/.bashrc: bash/bashrc_mac
     ~/.gitconfig: git/gitconfig_personal
-    ~/.config/starship.toml: starship/starship_mac.toml
 
 - create:
     - ~/.vim/undo-history
