@@ -5,16 +5,13 @@ SAVEHIST=1000
 
 bindkey -v
 
-# autocompletion using arrow keys (based on history)
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
-
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/andyfore/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+bindkey '^[OA' history-search-backward
+bindkey '^[OB' history-search-forward
 # End of lines added by compinstall
 
 # GENERAL
