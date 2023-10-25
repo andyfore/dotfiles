@@ -755,3 +755,7 @@ $env.config = {
         }
     ]
 }
+
+source ~/.cache/carapace/init.nu
+
+use ~/.cache/starship/init.nu
