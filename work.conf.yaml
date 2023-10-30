@@ -9,7 +9,7 @@
     ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
     ~/.gitconfig: git/gitconfig_work
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc: zsh/zshrc_work
 
 - create:
     - ~/.vim/undo-history

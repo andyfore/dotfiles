@@ -7,7 +7,6 @@
 
 - link:
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty_zellij_zsh.yml
-    # ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
     ~/.config/helix/config.toml: helix/config.toml
     ~/.config/helix/themes/base16_dark.toml: helix/themes/base16_dark.toml
     ~/.config/helix/themes/nord.toml: helix/themes/nord.toml
