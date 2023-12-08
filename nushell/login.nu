@@ -1,2 +1,2 @@
-let-env STARSHIP_SHELL = 'nu'
-let-env EDITOR = 'vim'
+$env.STARSHIP_SHELL = 'nu'
+$env.EDITOR = 'hx'

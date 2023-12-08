@@ -2,6 +2,7 @@
     link:
         relink: true
         create: true
+        force: true
 
 - clean: ['~']
 
@@ -10,6 +11,8 @@
     ~/.gitconfig: git/gitconfig_work
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc_work
+    ~/.config/nvim: nvim
 
 - create:
     - ~/.vim/undo-history
+    - ~/.config/nvim/
