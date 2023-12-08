@@ -18,6 +18,7 @@
     ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zsh_plugins.txt: zsh/zsh_plugins.txt
+    ~/.config/nvim: nvim
 
 - create:
     - ~/.config/alacritty
