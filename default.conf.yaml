@@ -29,3 +29,4 @@
     - ~/.config/zellij
     - ~/.config/zellij/themes
     - ~/.vim/undo-history
+    - ~/.config/nvim
