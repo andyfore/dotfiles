@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,terraform,ansible,git,packer
 
 ### Lazy nvim lock file ###
-lazy-lock.json
+**/nvim/lazy-lock.json
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
