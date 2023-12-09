@@ -1,9 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,terraform,ansible
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,terraform,ansible,git,packer
 
-### Lazy nvim lock file ###
-**/nvim/lazy-lock.json
-
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
