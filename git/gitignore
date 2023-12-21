@@ -1,5 +1,20 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,terraform,ansible
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,terraform,ansible,git,packer
+# Created by https://www.toptal.com/developers/gitignore/api/git,linux,macos,packer,ansible,windows,terraform,executable,go,lua
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,linux,macos,packer,ansible,windows,terraform,executable,go,lua
+
+### Ansible ###
+*.retry
+
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -16,8 +31,27 @@
 *_LOCAL_*.txt
 *_REMOTE_*.txt
 
-### Ansible ###
-*.retry
+### Go ###
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
 
 ### Linux ###
 *~
@@ -33,6 +67,43 @@
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
+### Lua ###
+# Compiled Lua sources
+luac.out
+
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Object files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Shared objects (inc. Windows DLLs)
+*.so.*
+
+# Executables
+*.i*86
+*.x86_64
+*.hex
+
 
 ### macOS ###
 # General
@@ -67,6 +138,27 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Packer ###
+# Cache objects
+packer_cache/
+
+# Crash log
+crash.log
+
+# https://www.packer.io/guides/hcl/variables
+# Exclude all .pkrvars.hcl files, which are likely to contain sensitive data,
+# such as password, private keys, and other secrets. These should not be part of
+# version control as they are data points which are potentially sensitive and
+# subject to change depending on the environment.
+*.pkrvars.hcl
+
+# For built boxes
+*.box
+
+### Packer Patch ###
+# ignore temporary output files
+output-*/
+
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
@@ -76,7 +168,6 @@ Temporary Items
 *.tfstate.*
 
 # Crash log files
-crash.log
 crash.*.log
 
 # Exclude all .tfvars files, which are likely to contain sensitive data, such as
@@ -129,26 +220,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-### Packer ###
-# Cache objects
-packer_cache/
-
-# Crash log
-crash.log
-
-# https://www.packer.io/guides/hcl/variables
-# Exclude all .pkrvars.hcl files, which are likely to contain sensitive data,
-# such as password, private keys, and other secrets. These should not be part of
-# version control as they are data points which are potentially sensitive and
-# subject to change depending on the environment.
-#
-*.pkrvars.hcl
-
-# For built boxes
-*.box
-
-### Packer Patch ###
-# ignore temporary output files
-output-*/
-
-# End of https://www.toptal.com/developers/gitignore/api/linux,macos,windows,terraform,ansible
+# End of https://www.toptal.com/developers/gitignore/api/git,linux,macos,packer,ansible,windows,terraform,executable,go,lua
