@@ -22,6 +22,20 @@ bindkey "^[OB" down-line-or-beginning-search # Down
 # bindkey "^[[B" history-search-forward
 # End of lines added by compinstall
 
+# source antidote
+# Set antidote home to local cache
+export ANTIDOTE_HOME=~/.cache/antidote
+if [[ $(uname) == "Darwin" ]]; then
+  source /usr/local/opt/antidote/share/antidote/antidote.zsh
+elif command -v apt > /dev/null; then
+  source ~/.config/antidote/antidote.zsh
+else
+  source ~/.antidote/antidote/antidote.zsh
+fi
+
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
+
 # GENERAL
 
 # (bonus: Disable sound errors in Zsh)
