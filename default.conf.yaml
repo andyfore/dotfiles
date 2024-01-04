@@ -6,7 +6,6 @@
 - clean: ['~']
 
 - link:
-    ~/.config/alacritty/alacritty.yml: alacritty/alacritty_zellij_zsh.yml
     ~/.config/helix/config.toml: helix/config.toml
     ~/.config/helix/themes/base16_dark.toml: helix/themes/base16_dark.toml
     ~/.config/helix/themes/nord.toml: helix/themes/nord.toml
@@ -17,11 +16,10 @@
     ~/.config/zellij/themes/tokyo-night.kdl: zellij/themes/tokyo-night.kdl
     ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.zsh_plugins.txt: zsh/zsh_plugins.txt
+    ~/.zsh_plugins.txt: antidote/zsh_plugins.txt
     ~/.config/nvim: nvim
 
 - create:
-    - ~/.config/alacritty
     - ~/.config/helix
     - ~/.config/helix/themes
     - ~/.config/wezterm
