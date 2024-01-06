@@ -8,7 +8,6 @@
 
 - link:
     ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
-    ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
     ~/.gitconfig: git/gitconfig_work
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc_work

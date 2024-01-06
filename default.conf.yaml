@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
     ~/.config/helix/config.toml: helix/config.toml
     ~/.config/helix/themes/base16_dark.toml: helix/themes/base16_dark.toml
     ~/.config/helix/themes/nord.toml: helix/themes/nord.toml
