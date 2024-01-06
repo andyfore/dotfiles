@@ -23,6 +23,9 @@ style = "Regular"
 args = ["-l", "-c", "zellij attach --index 0 || zellij"]
 program = "/bin/zsh"
 
+[window]
+decorations = "none"
+
 [window.dimensions]
 columns = 175
 lines = 45
