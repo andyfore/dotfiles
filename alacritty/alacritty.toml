@@ -25,7 +25,12 @@ program = "/bin/zsh"
 
 [window]
 decorations = "none"
+opacity = 0.85
 
 [window.dimensions]
 columns = 175
 lines = 45
+
+[window.position]
+x = 80
+y = 100
