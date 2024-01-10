@@ -19,128 +19,286 @@
 # #A3BE8C
 # #B48EAD
 
+# Sets user-defined palette
+palette = "catppuccin_mocha"
+
+# palette tables should be last in the config ⚓️
+[palettes.catppuccin_macchiato]
+rosewater = "#f4dbd6"
+flamingo = "#f0c6c6"
+pink = "#f5bde6"
+mauve = "#c6a0f6"
+red = "#ed8796"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6da95"
+teal = "#8bd5ca"
+sky = "#91d7e3"
+sapphire = "#7dc4e4"
+blue = "#8aadf4"
+lavender = "#b7bdf8"
+text = "#cad3f5"
+subtext1 = "#b8c0e0"
+subtext0 = "#a5adcb"
+overlay2 = "#939ab7"
+overlay1 = "#8087a2"
+overlay0 = "#6e738d"
+surface2 = "#5b6078"
+surface1 = "#494d64"
+surface0 = "#363a4f"
+base = "#24273a"
+mantle = "#1e2030"
+crust = "#181926"
+
+[palettes.catppuccin_frappe]
+rosewater = "#f2d5cf"
+flamingo = "#eebebe"
+pink = "#f4b8e4"
+mauve = "#ca9ee6"
+red = "#e78284"
+maroon = "#ea999c"
+peach = "#ef9f76"
+yellow = "#e5c890"
+green = "#a6d189"
+teal = "#81c8be"
+sky = "#99d1db"
+sapphire = "#85c1dc"
+blue = "#8caaee"
+lavender = "#babbf1"
+text = "#c6d0f5"
+subtext1 = "#b5bfe2"
+subtext0 = "#a5adce"
+overlay2 = "#949cbb"
+overlay1 = "#838ba7"
+overlay0 = "#737994"
+surface2 = "#626880"
+surface1 = "#51576d"
+surface0 = "#414559"
+base = "#303446"
+mantle = "#292c3c"
+crust = "#232634"
+
+[palettes.catppuccin_latte]
+rosewater = "#dc8a78"
+flamingo = "#dd7878"
+pink = "#ea76cb"
+mauve = "#8839ef"
+red = "#d20f39"
+maroon = "#e64553"
+peach = "#fe640b"
+yellow = "#df8e1d"
+green = "#40a02b"
+teal = "#179299"
+sky = "#04a5e5"
+sapphire = "#209fb5"
+blue = "#1e66f5"
+lavender = "#7287fd"
+text = "#4c4f69"
+subtext1 = "#5c5f77"
+subtext0 = "#6c6f85"
+overlay2 = "#7c7f93"
+overlay1 = "#8c8fa1"
+overlay0 = "#9ca0b0"
+surface2 = "#acb0be"
+surface1 = "#bcc0cc"
+surface0 = "#ccd0da"
+base = "#eff1f5"
+mantle = "#e6e9ef"
+crust = "#dce0e8"
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
 format = """
+$status \
+${custom.tztime} \
+${custom.uptime} \
 $username\
+$hostname\
+$shlvl\
+$kubernetes\
 $directory\
 $git_branch\
+$git_commit\
+$git_state\
 $git_status\
-$golang\
-$java\
+$docker_context\
+$package\
+$cmake\
 $nodejs\
+$perl\
+$python \
+$ruby\
 $rust\
 $terraform\
-$custom\
-[\uE0B0 ](fg:#81A1C1 bg:#2E3440)\
-$character
-"""
+$vagrant\
+$nix_shell\
+$conda\
+$aws \
+$env_var\
+$cmd_duration\
+$line_break\
+$character"""
 
-[character]
-#success_symbol = '[ λ](#7bff00) '
-#error_symbol = '[ λ](#ff1e00) '
-success_symbol = '[ ➜](#8FBCBB) '
-error_symbol = '[ ➜](#A3BE8C) '
-
-# system
-
-[username]
-show_always = true
-style_user = "bg:#4C566A"
-style_root = "bg:#4C566A"
-format = "[ $user ]($style)[\uE0BC](bg:#BF616A fg:#4C566A)"
-
-[directory]
-style = "bg:#BF616A"
-format = "[ $path ]($style)[\uE0BE](bg:#BF616A fg:#D08770)"
-truncate_to_repo = false
-truncation_length = 3
-truncation_symbol = "…/"
-
-# git
-
-[git_branch]
-format = '[ $symbol$branch(: $remote_branch )  ]($style)'
-symbol = " "
-style = "bg:#D08770"
-
-[git_metrics]
-disabled = false
-
-[git_status]
-format = "[($all_status$ahead_behind) ]($style)[\uE0BC](bg:#81A1C1 fg:#D08770)"
-style = "bg:#D08770"
-conflicted = "conflicted 󱚠 $count "
-ahead = "ahead  󰊍 $count "
-behind = "behind   $count "
-diverged = "diverged 󱡷 $count "
-untracked = "untracked  $count "
-stashed = "stashed 󱔘 $count "
-modified = "mod 󰊳 $count"
-staged = "stg  $count "
-renamed = "ren  $count "
-deleted = "del 󱕖 $count "
-
-[hg_branch]
-format = "[ $symbol$branch ]($style)"
-symbol = ""
-
-# languages
-
-[c]
-symbol = "© "
-style = "bg:#D8DEE9"
-format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
-
-[elixir]
-symbol = "\uE62D "
-style = "bg:#D8DEE9"
-format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
-
-[elm]
-symbol = "\uE62C "
-style = "bg:#D8DEE9"
-format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
-
-[golang]
-symbol = "\uE627 "
-style = "bg:#81A1C1 fg:#4C566A"
-format = "[ $symbol]($style)"
-
-[haskell]
-symbol = "\uE777 "
-style = "bg:#D8DEE9"
-format = "[[ $symbol($version)](bg:#D8DEE9)]($style)"
-
-[nodejs]
-symbol = "\uE718 "
-style = "bg:#81A1C1 fg:#4C566A"
-format = "[ $symbol]($style)"
-
-[rust]
-symbol = "\uE7A8 "
-style = "bg:#D8DEE9"
-format = "[[ $symbol($version) ](bg:#D8DEE9)]($style)"
-
-[ruby]
-symbol = "\uE739 "
-style = "bg:#D8DEE9"
-format = "[[ $symbol($version) ](bg:#D8DEE9)]($style)"
-
-[terraform]
-symbol = "󱁢"
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#fffff bg:#fffff)]($style)'
-detect_extensions = ['']
-detect_files = ['']
-detect_folders = ['']
-
-[custom.tf]
-command = 'tfenv version-name' # shows output of command
-# when = 'true'
-detect_extensions = ['tf']
-format = '[[ $symbol ($output) ](bg:#8FBCBB fg:#090c0c)]($style)'
-symbol = "󱁢"
-style = "bg:#fffff fg:#fffff"
+# Don't print a new line at the start of the prompt
+add_newline = false
 
 [aws]
-format = '[ ☁️ AWS/$profile/($region) ]($style)'
-style = 'fg:#ff9e00 bg:#1C3A5E'
+format = '\[AWS: [$profile/($region)]($style)\]'
+symbol = ''
+style = 'bold white'
+
+[character]
+success_symbol = " [λ](grey)"
+error_symbol = " [λ](bold red)"
+
+[cmd_duration]
+min_time = 1000
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+style = " yellow"
+format = "[:$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = ""
+style = "bold white"
+format = '[\($symbol$branch\)]($style) '
+
+[git_status]
+# I don't care about untracked files or that there's a stash present.
+untracked = ""
+format = '([\[$conflicted$deleted$renamed$modified$staged$behind\]]($style) )'
+modified = '*'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)'
+
+[status]
+disabled = false
+format = '[\[$status - $common_meaning\]](green)'
+
+[custom.tztime]
+command = 'date +"%a %b %d %Y %l:%M%p (%Z%z)"'
+when = "true"
+format = '[\[$symbol($output)\]](green)'
+
+[custom.uptime]
+command = "uptime.sh"
+when = "true"
+format = "[$symbol($output)](green)"
+
+[env_var]
+variable = "0"
+
+#### Disabled modules ####
+
+# add these back to format if you want them:
+# $time\
+# $hg_branch\
+# $dart\
+# $dotnet\
+# $elixir\
+# $elm\
+# $erlang\
+# $golang\
+# $helm\
+# $java\
+# $julia\
+# $kotlin\
+# $nim\
+# $ocaml\
+# $php\
+# $purescript\
+# $swift\
+# $zig\
+# $memory_usage\
+# $gcloud\
+# $openstack\
+# $crystal\
+# $lua\
+# $jobs\
+# $battery\
+[hg_branch]
+disabled = true
+[dart]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[erlang]
+disabled = true
+[golang]
+disabled = true
+[helm]
+disabled = true
+[java]
+disabled = true
+[julia]
+disabled = true
+[kotlin]
+disabled = true
+[nim]
+disabled = true
+[ocaml]
+disabled = true
+[php]
+disabled = true
+[purescript]
+disabled = true
+[swift]
+disabled = true
+[zig]
+disabled = true
+[memory_usage]
+disabled = true
+[gcloud]
+disabled = true
+[openstack]
+disabled = true
+[crystal]
+disabled = true
+[lua]
+disabled = true
+[jobs]
+disabled = true
+[battery]
+disabled = true
+
+# Until these get resolved, doing my own datetime with date:
+# https://github.com/starship/starship/discussions/2360#discussioncomment-391911
+# https://github.com/chronotope/chrono/issues/288
+[time]
+disabled = true
+# format = '[\[$time\]](green) '
+# time_format = "%a %b %d %Y %l:%M%p (%z)"
