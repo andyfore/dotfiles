@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "andyfore.plugins" }, { import = "andyfore.plugins.lsp" } }, {
   install = {
-    colorscheme = { "nordic" },
   },
   checker = {
     enabled = true,
