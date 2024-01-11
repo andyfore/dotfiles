@@ -35,7 +35,6 @@ return {
         "terraformls",
         "tflint",
         "efm",
-        "hydra_lsp",
         "bashls",
       },
       -- auto-install configured servers (with lspconfig)
