@@ -3,3 +3,5 @@
         email = andrewrfore@gmail.com
 [core]
         excludesfile = /Users/andyfore/.gitignore
+[credential]
+	helper = keepassxc --git-groups
