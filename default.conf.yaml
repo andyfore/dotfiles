@@ -7,10 +7,8 @@
 
 - link:
     ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
-    ~/.config/helix/config.toml: helix/config.toml
-    ~/.config/helix/themes/base16_dark.toml: helix/themes/base16_dark.toml
-    ~/.config/helix/themes/nord.toml: helix/themes/nord.toml
     ~/.config/starship.toml: starship/starship_test.toml
+    ~/.config/uptime.sh: starship/uptime.sh
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm.lua
     ~/.config/zellij/config.kdl: zellij/config.kdl
     ~/.config/zellij/themes/nord.kdl: zellij/themes/nord.kdl
@@ -21,8 +19,6 @@
     ~/.config/nvim: nvim
 
 - create:
-    - ~/.config/helix
-    - ~/.config/helix/themes
     - ~/.config/wezterm
     - ~/.config/wezterm/icons
     - ~/.config/zellij

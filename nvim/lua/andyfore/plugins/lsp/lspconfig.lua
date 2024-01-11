@@ -103,11 +103,6 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
-    -- configure hydra server
-    lspconfig["hydra_lsp"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
     -- configure json server
     lspconfig["jsonls"].setup({
       capabilities = capabilities,
