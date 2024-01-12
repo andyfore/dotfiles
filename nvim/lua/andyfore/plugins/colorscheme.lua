@@ -75,6 +75,11 @@ return {
     -- or just use opts table
     opts = {
       -- configurations
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
   },
   {

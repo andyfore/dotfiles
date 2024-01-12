@@ -27,14 +27,15 @@ config.color_scheme = 'Catppuccin Mocha'
 
 config.hide_tab_bar_if_only_one_tab = true
 
-config.initial_cols = 155
-config.initial_rows = 45
+config.initial_cols = 200
+config.initial_rows = 60
 
 config.font =
   wezterm.font('JetBrainsMono Nerd Font')
 
 -- Window size position and decoration
 config.window_decorations = "RESIZE"
+config.window_background_opacity = 0.85
 config.keys = {
   -- Switch to the default workspace
   {
