@@ -6,6 +6,7 @@ return {
     -- you can do it like this with a config function
     config = function()
       require("catppuccin").setup({
+        transparent_background = true,
         integrations = {
           aerial = false,
           barbar = false,
@@ -79,6 +80,7 @@ return {
       styles = {
         sidebars = "transparent",
         floats = "transparent",
+        splits = "transparent",
       },
     },
   },
