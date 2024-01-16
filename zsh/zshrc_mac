@@ -15,11 +15,16 @@ autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
+
+# linux
 #bindkey "^[OA" history-beginning-search-backward
 #bindkey "^[OB" history-beginning-search-forward
 
+# mac
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+
 # End of lines added by compinstall
 
 # GENERAL
