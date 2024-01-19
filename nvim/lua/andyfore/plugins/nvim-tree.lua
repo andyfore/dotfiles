@@ -48,6 +48,8 @@ return {
       git = {
         ignore = false,
       },
+      -- custom settings
+      sync_root_with_cwd = true,
     })
 
     -- set keymaps
