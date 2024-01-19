@@ -23,7 +23,8 @@ zle -N down-line-or-beginning-search
 # mac
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
-
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 # End of lines added by compinstall
 
@@ -44,6 +45,8 @@ eval "$(starship init zsh)"
 clear() {
         /usr/bin/clear; tput cup "$(tput lines)"; exec "$SHELL" -l
 }
+
+alias code="cd ~/Documents/Development/code/"
 
 if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     eval $(ssh-agent -s) > /dev/null
