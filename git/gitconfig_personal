@@ -3,5 +3,8 @@
         email = andrewrfore@gmail.com
 [core]
         excludesfile = /Users/andyfore/.gitignore
-[credential]
-	helper = keepassxc --git-groups
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
