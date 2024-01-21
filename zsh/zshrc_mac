@@ -26,9 +26,18 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
+#export XDG_CONFIG_HOME="$HOME/.config"
+
 # End of lines added by compinstall
 
 # GENERAL
+
+# Aliases
+alias code="cd ~/Documents/Development/code/"
+alias repo="cd ~/Documents/Development/repos/"
+
+# Environment variables
+export LG_CONFIG_FILE="$HOME/Library/Application Support/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit/themes-mergable/mocha/sapphire.yml"
 
 # (bonus: Disable sound errors in Zsh)
 
@@ -40,13 +49,9 @@ setopt NO_BEEP
 setopt PROMPT_SUBST
 eval "$(starship init zsh)"
 
-# custom aliases
-
 clear() {
         /usr/bin/clear; tput cup "$(tput lines)"; exec "$SHELL" -l
 }
-
-alias code="cd ~/Documents/Development/code/"
 
 if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     eval $(ssh-agent -s) > /dev/null
