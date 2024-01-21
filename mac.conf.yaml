@@ -12,6 +12,8 @@
     ~/.gitconfig: git/gitconfig_personal
     ~/.zshrc: zsh/zshrc_mac
     ~/.ssh/config: ssh/config_mac
+	~/Library/Application Support/lazygit/config.yml: lzygit/config_mac.yml
 
 - create:
     - ~/.vim/undo-history
+    - ~/Library/Application Support/lazygit
