@@ -4,8 +4,9 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    "nvim-tree/nvim-web-devicons",
-  },
+      "nvim-tree/nvim-web-devicons",
+      "nvim-telescope/telescope-project.nvim",
+    },
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
@@ -24,10 +25,11 @@ return {
     })
 
     telescope.load_extension("fzf")
+    telescope.load_extension("project")
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
-
+    keymap.set("n", "<leader>fp", "<cmd>Telescope project<cr>", { desc = "Open project window" })
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
     keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
