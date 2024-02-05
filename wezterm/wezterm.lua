@@ -35,7 +35,7 @@ config.font =
 
 -- Window size position and decoration
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.95
 config.keys = {
   -- Switch to the default workspace
   {
