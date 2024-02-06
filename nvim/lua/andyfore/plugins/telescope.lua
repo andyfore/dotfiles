@@ -6,6 +6,7 @@ return {
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-tree/nvim-web-devicons",
       "nvim-telescope/telescope-project.nvim",
+      "nvim-telescope/telescope-file-browser.nvim",
     },
   config = function()
     local telescope = require("telescope")
@@ -26,6 +27,7 @@ return {
 
     telescope.load_extension("fzf")
     telescope.load_extension("project")
+    telescope.load_extension("file_browser")
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
