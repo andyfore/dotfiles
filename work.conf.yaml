@@ -15,5 +15,6 @@
     ~/.config/lazygit/config.yml: lazygit/config_work.yml
 
 - create:
+    _ ~/.config/alacritty/icons/
     - ~/.vim/undo-history
     - ~/.config/lazygit/

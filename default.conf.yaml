@@ -19,8 +19,10 @@
     ~/.config/nvim: nvim
 
 - create:
-    - ~/.config/wezterm
+    - ~/.config/alacritty/
+    - ~/.config/wezterm/
     - ~/.config/wezterm/icons
-    - ~/.config/zellij
+    - ~/.config/zellij/
     - ~/.config/zellij/themes
     - ~/.vim/undo-history
+    - ~/.zsh_functions/
