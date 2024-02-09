@@ -28,8 +28,8 @@ decorations = "none"
 opacity = 0.85
 
 [window.dimensions]
-columns = 175
-lines = 45
+columns = 200
+lines = 60
 
 [window.position]
 x = 80
