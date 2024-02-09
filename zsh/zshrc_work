@@ -41,9 +41,19 @@ antidote load
 
 # GENERAL
 
-# Aliases
+# Function to set the history file
+if (( ! EUID )); then
+  HISTFILE=~/.zsh_history_root
+else
+  HISTFILE=~/.zsh_history
+fi
+
+# Aliases for shell
 alias code="cd ~/Documents/Development/code/"
 alias repo="cd ~/Documents/Development/repos/"
+alias nv="nvim ."
+
+# Aliases for eza
 alias ld='eza -lD'
 alias lf='eza -lF --color=always | grep -v /'
 alias lh='eza -dl .* --group-directories-first'
@@ -51,9 +61,14 @@ alias ll='eza -al --group-directories-first'
 alias ls='eza -alF --color=always --sort=size | grep -v /'
 alias lt='eza -al --sort=modified'
 
+# Aliases for ssh tunnels
+alias pt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com'
+alias dt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com'
+
 # Environment variables
 export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/Documents/Development/repos/themes/lazygit/themes-mergable/mocha/sky.yml"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export RUSTC_WRAPPER="sccache"
 
 # (bonus: Disable sound errors in Zsh)
 
