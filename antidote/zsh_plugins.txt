@@ -29,3 +29,4 @@ Dbz/kube-aliases
 # Application specific
 #dashixiong91/zsh-vscode
 ahmetb/kubectx path:completion kind:fpath
+atuinsh/atuin
