@@ -17,6 +17,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zsh_plugins.txt: antidote/zsh_plugins.txt
     ~/.config/nvim: nvim
+    ~/.zsh_history: ~/.histfile
 
 - create:
     - ~/.config/alacritty/
