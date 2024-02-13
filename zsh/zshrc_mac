@@ -26,9 +26,19 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
-#export XDG_CONFIG_HOME="$HOME/.config"
+# source antidote
+# Set antidote home to local cache
+export ANTIDOTE_HOME=~/.cache/antidote
+if [[ $(uname) == "Darwin" ]]; then
+  source /usr/local/opt/antidote/share/antidote/antidote.zsh
+elif command -v apt > /dev/null; then
+  source ~/.config/antidote/antidote.zsh
+else
+  source ~/.antidote/antidote/antidote.zsh
+fi
 
-# End of lines added by compinstall
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
 
 # GENERAL
 
@@ -71,3 +81,6 @@ fi
 # zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 source <(carapace _carapace)
+
+# atuin support
+eval "$(atuin init zsh)"
