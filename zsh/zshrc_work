@@ -41,13 +41,6 @@ antidote load
 
 # GENERAL
 
-# Function to set the history file
-if (( ! EUID )); then
-  HISTFILE=~/.zsh_history_root
-else
-  HISTFILE=~/.zsh_history
-fi
-
 # Aliases for shell
 alias code="cd ~/Documents/Development/code/"
 alias repo="cd ~/Documents/Development/repos/"
@@ -98,3 +91,6 @@ fi
 # zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 source <(carapace _carapace)
+
+# atuin support
+eval "$(atuin init zsh)"
