@@ -1,0 +1,19 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/.profile: bash/profile_mac_work
+    ~/.bashrc: bash/bashrc_mac_work
+    ~/.gitconfig: git/gitconfig_work
+    ~/.zshrc: zsh/zshrc_mac
+    ~/.ssh/config: ssh/config_work
+    ~/Library/Application Support/lazygit/config.yml: lazygit/config_mac.yml
+
+- create:
+    - ~/.vim/undo-history
+    - ~/Library/Application Support/lazygit
