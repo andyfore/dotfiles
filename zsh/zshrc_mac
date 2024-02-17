@@ -42,6 +42,11 @@ antidote load
 
 # GENERAL
 
+# Aliases for shell
+alias code="cd ~/Documents/Development/code/"
+alias repo="cd ~/Documents/Development/repos/"
+alias nv="nvim ."
+
 # Aliases
 alias code="cd ~/Documents/Development/code/"
 alias repo="cd ~/Documents/Development/repos/"
@@ -54,6 +59,8 @@ alias lt='eza -al --sort=modified'
 
 # Environment variables
 export LG_CONFIG_FILE="$HOME/Library/Application Support/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export RUSTC_WRAPPER="sccache"
 
 # (bonus: Disable sound errors in Zsh)
 
