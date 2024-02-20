@@ -29,6 +29,8 @@ bindkey "^[OB" down-line-or-beginning-search # Down
 # Set antidote home to local cache
 export ANTIDOTE_HOME=~/.cache/antidote
 if [[ $(uname) == "Darwin" ]]; then
+    source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+elif [[ $(uname) == "Darwin" ]]; then
   source /usr/local/opt/antidote/share/antidote/antidote.zsh
 elif command -v apt > /dev/null; then
   source ~/.config/antidote/antidote.zsh

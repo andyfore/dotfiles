@@ -9,10 +9,11 @@
 - link:
     ~/.profile: bash/profile_mac
     ~/.bashrc: bash/bashrc_mac
+    ~/.zshrc: zsh/zshrc_mac_personal
     ~/.gitconfig: git/gitconfig_personal
-    ~/.zshrc: zsh/zshrc_mac
-    ~/.ssh/config: ssh/config_mac
+    ~/.ssh/config: ssh/config_mac_personal
     ~/Library/Application Support/lazygit/config.yml: lazygit/config_mac.yml
+    ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
 
 - create:
     - ~/.vim/undo-history

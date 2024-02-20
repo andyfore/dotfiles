@@ -7,14 +7,14 @@
 - clean: ['~']
 
 - link:
-    ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
+    ~/.profile: bash/profile_mac_work
+    ~/.bashrc: bash/bashrc_mac_work
+    ~/.zshrc: zsh/zshrc_mac_work
     ~/.gitconfig: git/gitconfig_work
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.zshrc: zsh/zshrc_work
-    ~/.ssh/config: ssh/config_work
-    ~/.config/lazygit/config.yml: lazygit/config_work.yml
+    ~/.ssh/config: ssh/config_mac_work
+    ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
+    ~/.zsh_plugins.txt: antidote/zsh_plugins_work.txt
 
 - create:
-    _ ~/.config/alacritty/icons/
     - ~/.vim/undo-history
-    - ~/.config/lazygit/
+    - ~/Library/Application Support/lazygit

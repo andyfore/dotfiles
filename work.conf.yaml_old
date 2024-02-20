@@ -1,0 +1,20 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
+    ~/.gitconfig: git/gitconfig_work
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc: zsh/zshrc_work
+    ~/.ssh/config: ssh/config_work
+    ~/.config/lazygit/config.yml: lazygit/config_work.yml
+
+- create:
+    _ ~/.config/alacritty/icons/
+    - ~/.vim/undo-history
+    - ~/.config/lazygit/

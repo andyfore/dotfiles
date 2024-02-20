@@ -15,9 +15,7 @@
     ~/.config/zellij/themes/tokyo-night.kdl: zellij/themes/tokyo-night.kdl
     ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.zsh_plugins.txt: antidote/zsh_plugins.txt
     ~/.config/nvim: nvim
-    ~/.zsh_history: ~/.histfile
 
 - create:
     - ~/.config/alacritty/
