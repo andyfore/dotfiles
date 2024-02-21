@@ -13,7 +13,7 @@
     ~/.bashrc: bash/bashrc_personal
     ~/.zshrc: zsh/zshrc_mac_personal
     ~/.gitconfig: git/gitconfig_personal
-    ~/.ssh/config: ssh/config_mac_personal
+    ~/.ssh/config: ssh/config_personal
     ~/Library/Application Support/lazygit/config.yml: lazygit/config_personal.yml
     ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
 
