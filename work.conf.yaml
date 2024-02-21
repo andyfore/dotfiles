@@ -20,5 +20,3 @@
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_work.lua
 
 - create:
-    - ~/.vim/undo-history
-    - ~/Library/Application Support/lazygit

@@ -15,6 +15,7 @@
 
 - create:
     - ~/.config/alacritty/
+    - ~/.config/lazygit/
     - ~/.config/wezterm/
     - ~/.config/wezterm/icons
     - ~/.config/zellij/

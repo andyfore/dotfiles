@@ -14,11 +14,9 @@
     ~/.bashrc: bash/bashrc_personal
     ~/.gitconfig: git/gitconfig_personal
     ~/.ssh/config: ssh/config_personal
-    ~/Library/Application Support/lazygit/config.yml: lazygit/config_personal.yml
+    ~/.config/lazygit/config.yml: lazygit/config_personal.yml
     ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
     ~/.tmux.conf: tmux/tmux_personal.conf
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_personal.lua
 
 - create:
-    - ~/.vim/undo-history
-    - ~/Library/Application Support/lazygit
