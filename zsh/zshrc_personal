@@ -61,6 +61,7 @@ alias lt='eza -al --sort=modified'
 export LG_CONFIG_FILE="$HOME/Library/Application Support/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export RUSTC_WRAPPER="sccache"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # (bonus: Disable sound errors in Zsh)
 
