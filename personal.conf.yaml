@@ -16,6 +16,7 @@
     ~/.ssh/config: ssh/config_personal
     ~/Library/Application Support/lazygit/config.yml: lazygit/config_personal.yml
     ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
+    ~/.tmux.conf: tmux/tmux_personal.conf
 
 - create:
     - ~/.vim/undo-history
