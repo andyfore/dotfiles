@@ -7,11 +7,11 @@
 - clean: ['~']
 
 - link:
+    ~/.zshrc: zsh/zshrc_personal
     ~/.config/alacritty/alacritty.toml: alacritty/alacritty_personal.toml
     ~/.config/starship.toml: starship/starship_personal.toml
     ~/.profile: bash/profile_personal
     ~/.bashrc: bash/bashrc_personal
-    ~/.zshrc: zsh/zshrc_mac_personal
     ~/.gitconfig: git/gitconfig_personal
     ~/.ssh/config: ssh/config_personal
     ~/Library/Application Support/lazygit/config.yml: lazygit/config_personal.yml
