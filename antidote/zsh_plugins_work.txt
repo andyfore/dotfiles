@@ -8,7 +8,7 @@ sparsick/ansible-zsh
 se-jaeger/zsh-activate-py-environment
 #weizard/assume-role
 webyneter/docker-aliases
-ptavares/zsh-terraform
+andyfore/zsh-terraform
 Dbz/kube-aliases
 
 #romkatv/zsh-bench kind:path
