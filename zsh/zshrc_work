@@ -64,7 +64,7 @@ alias dt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export RUSTC_WRAPPER="sccache"
 export XDG_CONFIG_HOME="$HOME/.config"
-export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/themes/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"
+export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"
 
 # (bonus: Disable sound errors in Zsh)
 
