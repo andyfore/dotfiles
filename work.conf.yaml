@@ -7,8 +7,10 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: bash/profile_mac_work
-    ~/.bashrc: bash/bashrc_mac_work
+    ~/.config/alacritty/alacritty.toml: alacritty/alacritty_work.toml
+    ~/.config/starship.toml: starship/starship_work.toml
+    ~/.profile: bash/profile_work
+    ~/.bashrc: bash/bashrc_work
     ~/.zshrc: zsh/zshrc_mac_work
     ~/.gitconfig: git/gitconfig_work
     ~/.ssh/config: ssh/config_mac_work
