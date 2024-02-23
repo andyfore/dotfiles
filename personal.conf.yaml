@@ -18,5 +18,6 @@
     ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
     ~/.tmux.conf: tmux/tmux_personal.conf
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_personal.lua
+    ~/.config/zellij/config.kdl: zellij/config_personal.kdl
 
       #- create:
