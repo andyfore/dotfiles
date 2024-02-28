@@ -5,6 +5,15 @@ SAVEHIST=1000
 
 bindkey -v
 
+# homebrew completions
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/andyfore/.zshrc'
@@ -17,13 +26,12 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
 # linux
-bindkey "^[OA" up-line-or-beginning-search # Up
-bindkey "^[OB" down-line-or-beginning-search # Down
+# bindkey "^[OA" up-line-or-beginning-search # Up
+# bindkey "^[OB" down-line-or-beginning-search # Down
 
 # mac
-# bindkey "^[[A" history-search-backward
-# bindkey "^[[B" history-search-forward
-# End of lines added by compinstall
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
 # source antidote
 # Set antidote home to local cache
@@ -67,6 +75,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export RUSTC_WRAPPER="sccache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"
+export LDFLAGS="-L/opt/homebrew/opt/readline/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/readline/include"
 
 # (bonus: Disable sound errors in Zsh)
 
