@@ -1,5 +1,3 @@
 [user]
 	name = Andrew Fore
 	email = andrew.fore@newfold.com
-[credential]
-	helper = keepassxc --git-groups
