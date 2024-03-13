@@ -17,4 +17,5 @@ Dbz/kube-aliases
 ahmetb/kubectx path:completion kind:fpath
 
 #Oh-myzsh plugins
+ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/git
