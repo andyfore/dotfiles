@@ -65,7 +65,7 @@ alias ls='eza -alF --color=always --sort=size | grep -v /'
 alias lt='eza -al --sort=modified'
 
 # Aliases for ssh
-alias pt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com'
+alias pt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:atl4k8s01api.registeredsite.com:6443 afore@scooby4-priv.web.com'
 alias dt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com'
 alias scooby='ssh afore@scooby4.web.com'
 alias uap='ssh afore@jump1.infra.atl1.eigbox.com'
