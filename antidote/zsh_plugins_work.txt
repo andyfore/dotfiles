@@ -1,25 +1,11 @@
 # .zsh_plugins.txt
 
 # from awesome-zsh-plugins
-#zdharma/fast-syntax-highlighting kind:defer
-#agkozak/zsh-z
-#zsh-users/zsh-completions
 sparsick/ansible-zsh
 se-jaeger/zsh-activate-py-environment
-#weizard/assume-role
 webyneter/docker-aliases
 andyfore/zsh-terraform
 Dbz/kube-aliases
-
-#romkatv/zsh-bench kind:path
-#olets/zsh-abbr    kind:defer
-
-# zsh-utils
-#belak/zsh-utils path:editor
-#belak/zsh-utils path:history
-#belak/zsh-utils path:prompt
-#belak/zsh-utils path:utility
-#belak/zsh-utils path:completion
 
 # popular fish-like plugins
 #mattmc3/zfunctions
@@ -29,3 +15,6 @@ Dbz/kube-aliases
 # Application specific
 #dashixiong91/zsh-vscode
 ahmetb/kubectx path:completion kind:fpath
+
+#Oh-myzsh plugins
+ohmyzsh/ohmyzsh path:plugins/git
