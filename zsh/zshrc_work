@@ -71,7 +71,7 @@ alias scooby='ssh afore@scooby4.web.com'
 alias uap='ssh afore@jump1.infra.atl1.eigbox.com'
 
 # Environment variables
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH:$HOME/.rd/bin"
 export RUSTC_WRAPPER="sccache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"

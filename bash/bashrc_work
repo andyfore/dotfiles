@@ -8,3 +8,5 @@ PS1='\h:\W \u\$ '
 shopt -s checkwinsize
 
 [ -r "/etc/bashrc_$TERM_PROGRAM" ] && . "/etc/bashrc_$TERM_PROGRAM"
+
+export PATH="$HOME/.rd/bin:$PATH"
