@@ -104,3 +104,11 @@ exit
 code
 ls
 git status
+git stash
+git pull
+git pull --ff-only
+git config pull.rebase false
+git pull
+git stash show
+git stash list
+git stash pop
