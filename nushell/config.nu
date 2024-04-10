@@ -873,3 +873,7 @@ source ~/.cache/carapace/init.nu
 
 # starship prompt
 use ~/.cache/starship/init.nu
+
+# atuin support
+# commented out due to breaking change
+# source ~/.local/share/atuin/init.nu

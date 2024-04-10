@@ -127,4 +127,4 @@ def ls [] {eza -alF --color=always --sort=size | grep -v /}
 def lt [] {eza -al --sort=modified}
 
 # Load external alias files
-source ./aliases/git.nu
+#source ./aliases/git.nu
