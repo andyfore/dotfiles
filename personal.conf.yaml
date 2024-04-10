@@ -21,6 +21,7 @@
     ~/.config/zellij/config.kdl: zellij/config_personal.kdl
     ~/Library/Application Support/nushell: nushell
     ~/.config/carapace: ~/Library/Application Support/carapace
+    ~/.config/helix/config.toml: helix/config.toml
 
-
-      #- create:
+- create:
+    ~/.config/helix/
