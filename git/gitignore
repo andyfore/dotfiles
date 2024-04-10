@@ -138,6 +138,10 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### nushell ###
+# nushell hsitory file
+history.txt
+
 ### Packer ###
 # Cache objects
 packer_cache/
@@ -219,5 +223,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/git,linux,macos,packer,ansible,windows,terraform,executable,go,lua
