@@ -112,7 +112,7 @@ $env.EDITOR = "nvim"
 $env.RUSTC_WRAPPER = "sccache"
 
 # Set LG_CONFIG_FILE
-$env.LG_CONFIG_FILE = "$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
+$env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-path)/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
 
 alias code = cd ~/Documents/Development/code/
 alias repo = cd ~/Documents/Development/repos/
