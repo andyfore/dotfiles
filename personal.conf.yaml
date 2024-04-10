@@ -19,5 +19,8 @@
     ~/.tmux.conf: tmux/tmux_personal.conf
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_personal.lua
     ~/.config/zellij/config.kdl: zellij/config_personal.kdl
+    ~/Library/Application Support/nushell: nushell
+    ~/.config/carapace: ~/Library/Application Support/carapace
+
 
       #- create:
