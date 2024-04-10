@@ -112,3 +112,7 @@ git pull
 git stash show
 git stash list
 git stash pop
+git add .
+git commit --message "updated"
+git push
+git status
