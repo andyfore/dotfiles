@@ -22,6 +22,7 @@
     ~/Library/Application Support/nushell: nushell
     ~/.config/carapace: ~/Library/Application Support/carapace
     ~/.config/helix/config.toml: helix/config.toml
+    ~/.config/helix/languages.toml: helix/languages.toml
 
 - create:
     ~/.config/helix/
