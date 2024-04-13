@@ -7,17 +7,23 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zsh/zshrc_work
-    ~/.config/alacritty/alacritty.toml: alacritty/alacritty_work.toml
-    ~/.config/starship.toml: starship/starship_work.toml
-    ~/.profile: bash/profile_work
-    ~/.bashrc: bash/bashrc_work
-    ~/.gitconfig: git/gitconfig_work
-    ~/.ssh/config: ssh/config_work
-    ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
-    ~/.zsh_plugins.txt: antidote/zsh_plugins_work.txt
-    ~/.tmux.conf: tmux/tmux_work.conf
-    ~/.config/wezterm/wezterm.lua: wezterm/wezterm_work.lua
-    ~/.config/zellij/config.kdl: zellij/config_work.kdl
+     ~/.zshrc: zsh/zshrc_work
+     ~/.config/alacritty/alacritty.toml: alacritty/alacritty_work.toml
+     ~/.config/alacritty/themes/catppuccin-mocha.toml: alacritty/themes/catppuccin-mocha.toml
+     ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
+     ~/.config/starship.toml: starship/starship_work.toml
+     ~/.profile: bash/profile_work
+     ~/.bashrc: bash/bashrc_work
+     ~/.gitconfig: git/gitconfig_work
+     ~/.ssh/config: ssh/config_work
+     ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
+     ~/.zsh_plugins.txt: antidote/zsh_plugins_work.txt
+     ~/.tmux.conf: tmux/tmux_work.conf
+     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_work.lua
+     ~/.config/zellij/config.kdl: zellij/config_work.kdl
 
-      #- create:
+- create:
+   - ~/.config/alacritty
+   - ~/.config/alacritty/themes
+   - ~/.config/alacritty/icons
+   - ~/.config/helix

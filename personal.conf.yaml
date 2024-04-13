@@ -25,4 +25,7 @@
     ~/.config/helix/languages.toml: helix/languages.toml
 
 - create:
-    ~/.config/helix/
+    - ~/.config/alacritty
+    - ~/.config/alacritty/themes
+    - ~/.config/alacritty/icons
+    - ~/.config/helix
