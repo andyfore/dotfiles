@@ -1,6 +1,6 @@
 # Nushell Environment Config File
 #
-# version = "0.92.1"
+# version = "0.92.2"
 
 def create_left_prompt [] {
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
@@ -98,36 +98,3 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-
-# Add User specific path segments (appended)
-$env.PATH = ($env.PATH | append "/usr/local/bin" | append '~/.cargo/bin' | append '~/.krew/bin' | append '.config/carapace/bin')
-
-# Add System specific path segments (prepended)
-$env.PATH = ($env.PATH | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin" | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin" | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin" | prepend "/System/Cryptexes/App/usr/bin")
-
-# Set Editor to neovim
-$env.EDITOR = "nvim"
-
-# Set Rustic Wrapper
-$env.RUSTC_WRAPPER = "sccache"
-
-# Set LG_CONFIG_FILE
-$env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-path)/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
-
-alias code = cd ~/Documents/Development/code/
-alias repo = cd ~/Documents/Development/repos/
-alias nv = nvim .
-
-# User defined custom commands for eza
-def ld [] {eza -lD}
-def lf [] {eza -lF --color=always | grep -v /}
-def lh [] {eza -dl .* --group-directories-first}
-def ll [] {eza -al --group-directories-first}
-def ls [] {eza -alF --color=always --sort=size | grep -v /}
-def lt [] {eza -al --sort=modified}
-
-# Load external alias files
-#source ./aliases/git.nu
-
-$env.ZELLIJ_AUTO_ATTACH = "true"
-$env.ZELLIJ_AUTO_EXIT = "true"

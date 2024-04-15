@@ -1,7 +1,7 @@
-import = ["/home/andrew.fore/.config/alacritty/themes/themes/nordic.toml"]
+import = ["/home/andrew.fore/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [font]
-size = 11.0
+size = 12.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -20,11 +20,12 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [shell]
-args = ["-l", "-c", "zellij attach --index 0 || zellij"]
-program = "/bin/zsh"
+#args = ["-l", "-c", "zellij attach --index 0 || zellij"]
+#program = "/bin/zsh"
+program = "/usr/local/bin/nu"
 
 [window]
-decorations = "none"
+#decorations = "none"
 opacity = 0.85
 
 [window.dimensions]

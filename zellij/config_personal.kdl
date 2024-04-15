@@ -253,7 +253,7 @@ auto_layout true
 // Default: default
 //
 // theme "tokyo-night"
-theme "catppuccin-macchiato"
+theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"

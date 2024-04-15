@@ -19,12 +19,13 @@
     ~/.tmux.conf: tmux/tmux_personal.conf
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_personal.lua
     ~/.config/zellij/config.kdl: zellij/config_personal.kdl
-    ~/Library/Application Support/nushell: nushell
+    ~/Library/Application Support/nushell: nushell/personal
     ~/.config/carapace: ~/Library/Application Support/carapace
     ~/.config/helix/config.toml: helix/config.toml
     ~/.config/helix/languages.toml: helix/languages.toml
 
 - create:
+    - ~/.cache/starship
     - ~/.config/alacritty
     - ~/.config/alacritty/themes
     - ~/.config/alacritty/icons

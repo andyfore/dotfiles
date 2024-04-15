@@ -1,6 +1,6 @@
 # Nushell Config File
 #
-# version = "0.92.1"
+# version = "0.92.2"
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
@@ -141,8 +141,6 @@ let light_theme = {
 #     carapace $spans.0 nushell ...$spans | from json
 # }
 
-use ~/Documents/Development/repos/nu_scripts/themes/themes/catppuccin-mocha.nu
-
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
     show_banner: true # true or false to enable or disable the welcome banner at startup
@@ -228,8 +226,7 @@ $env.config = {
         vi_normal: underscore # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
     }
 
-    #color_config: $dark_theme # if you want a more interesting theme, you can replace the empty record with `$dark_theme`, `$light_theme` or another custom record
-    color_config: (catppuccin-mocha)
+    color_config: $dark_theme # if you want a more interesting theme, you can replace the empty record with `$dark_theme`, `$light_theme` or another custom record
     use_grid_icons: true
     footer_mode: "25" # always, never, number_of_rows, auto
     float_precision: 2 # the precision for displaying floats in tables
@@ -867,30 +864,3 @@ $env.config = {
         }
     ]
 }
-
-# carapace_completer
-source ~/.cache/carapace/init.nu
-
-# starship prompt
-use ~/.cache/starship/init.nu
-
-# atuin support
-# commented out due to breaking change
-# source ~/.local/share/atuin/init.nu
-
-# zellij
-def start_zellij [] {
-  if 'ZELLIJ' not-in ($env | columns) {
-    if 'ZELLIJ_AUTO_ATTACH' in ($env | columns) and $env.ZELLIJ_AUTO_ATTACH == 'true' {
-      zellij attach -c
-    } else {
-      zellij
-    }
-
-    if 'ZELLIJ_AUTO_EXIT' in ($env | columns) and $env.ZELLIJ_AUTO_EXIT == 'true' {
-      exit
-    }
-  }
-}
-
-start_zellij
