@@ -20,8 +20,8 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [shell]
-#args = ["-l", "-c", "zellij attach --index 0 || zellij"]
 program = "/opt/homebrew/bin/nu"
+args = ["-l"]
 
 [window]
 #decorations = "none"
