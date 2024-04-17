@@ -876,7 +876,7 @@ use ~/.cache/starship/init.nu
 
 # atuin support
 # commented out due to breaking change
-# source ~/.local/share/atuin/init.nu
+source ~/.local/share/atuin/init.nu
 
 # zellij
 def start_zellij [] {
