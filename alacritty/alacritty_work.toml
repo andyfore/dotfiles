@@ -1,4 +1,4 @@
-#import = ["/home/andrew.fore/.config/alacritty/themes/themes/nordic.toml"]
+import = ["/home/andrew.fore/.config/alacritty/themes/themes/tokyo-night.toml"]
 
 [font]
 size = 12.0
