@@ -127,7 +127,8 @@ def ls [] {eza -alF --color=always --sort=size | grep -v /}
 def lt [] {eza -al --sort=modified}
 
 # Load external alias files
-#source ./aliases/git.nu
+source $"($nu.default-config-dir)/../aliases/git.nu"
+source $"($nu.default-config-dir)/../aliases/kubernetes.nu"
 
 $env.ZELLIJ_AUTO_ATTACH = "true"
 $env.ZELLIJ_AUTO_EXIT = "true"

@@ -1,4 +1,5 @@
 return {
+--[
   {
     "catppuccin/nvim",
     lazy = false,
@@ -90,4 +91,5 @@ return {
       colorscheme = "catppuccin-mocha",
     },
   },
+--]
 }

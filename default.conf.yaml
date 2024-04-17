@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.config/helix: helix
     ~/.config/uptime.sh: starship/uptime.sh
     ~/.config/zellij/themes/nord.kdl: zellij/themes/nord.kdl
     ~/.config/zellij/themes/tokyo-night.kdl: zellij/themes/tokyo-night.kdl
@@ -14,6 +15,7 @@
 
 - create:
     - ~/.config/alacritty/
+    - ~/.config/helix/
     - ~/.config/lazygit/
     - ~/.config/wezterm/
     - ~/.config/wezterm/icons

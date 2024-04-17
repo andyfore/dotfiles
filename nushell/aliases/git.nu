@@ -12,6 +12,18 @@ def gpristine [] {
     git reset --hard; git clean -dfx
 }
 
+def gpsup [] {
+    git push --set-upstream origin (git_current_branch)
+}
+
+#def grt [] {
+#    cd (git rev-parse --show-toplevel || echo ".")
+#}
+
+def gtv [] {
+    git tag | sort -v
+}
+
 alias s = git status -sb
 alias g = git
 alias ga = git add
@@ -49,7 +61,7 @@ alias gcount = git shortlog -sn
 alias gcp = git cherry-pick
 alias gcpa = git cherry-pick --abort
 alias gcpc = git cherry-pick --continue
-alias gcs = git commit -S
+alias gcs = git commit -s
 alias gcsm = git commit -s -m
 alias gd = git diff
 alias gdca = git diff --cached
@@ -78,8 +90,8 @@ alias glo = git log --oneline --decorate
 alias globurl = noglob urlglobber
 alias glog = git log --oneline --decorate --graph
 alias gloga = git log --oneline --decorate --graph --all
-alias glol = git log --graph --pretty=\%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\ --abbrev-commit
-alias glola = git log --graph --pretty=\%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\ --abbrev-commit --all
+alias glol = git log --graph --pretty=\%cred%h%creset -%c(yellow)%d%creset %s %cgreen(%cr) %c(bold blue)<%an>%creset\ --abbrev-commit
+alias glola = git log --graph --pretty=\%cred%h%creset -%c(yellow)%d%creset %s %cgreen(%cr) %c(bold blue)<%an>%creset\ --abbrev-commit --all
 alias glp = _git_log_prettily
 alias glum = git pull upstream master
 alias gm = git merge
@@ -91,7 +103,7 @@ alias gp = git push
 alias gpd = git push --dry-run
 #alias gpoat = (git push origin --all; git push origin --tags)
 #alias gpristine = (git reset --hard; git clean -dfx)
-alias gpsup = git push --set-upstream origin (git_current_branch)
+#alias gpsup = git push --set-upstream origin (git_current_branch)
 alias gpu = git push upstream
 alias gpv = git push -v
 alias gr = git remote
@@ -102,13 +114,13 @@ alias grbc = git rebase --continue
 alias grbi = git rebase -i
 alias grbm = git rebase master
 alias grbs = git rebase --skip
-alias grep = grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}
-alias grh = git reset HEAD
-alias grhh = git reset HEAD --hard
+alias grep = grep  --color=auto --exclude-dir={.bzr,cvs,.git,.hg,.svn}
+alias grh = git reset head
+alias grhh = git reset head --hard
 alias grmv = git remote rename
 alias grrm = git remote remove
 alias grset = git remote set-url
-alias grt = cd (git rev-parse --show-toplevel || echo ".")
+#alias grt = cd (git rev-parse --show-toplevel || echo ".")
 alias gru = git reset --
 alias grup = git remote update
 alias grv = git remote -v
@@ -128,7 +140,7 @@ alias gstp = git stash pop
 alias gsts = git stash show --text
 alias gsu = git submodule update
 alias gts = git tag -s
-alias gtv = (git tag | sort -V)
+#alias gtv = (git tag | sort -v)
 alias gunignore = git update-index --no-assume-unchanged
 alias gup = git pull --rebase
 alias gupv = git pull --rebase -v
