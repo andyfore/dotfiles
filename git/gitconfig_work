@@ -3,10 +3,5 @@
 	email = andrew.fore@newfold.com
 [core]
         excludesfile = /Users/afore/.gitignore
-[filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
 [credential]
 	helper = keepassxc --git-groups
