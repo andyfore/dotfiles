@@ -9,8 +9,6 @@
 - link:
      ~/.zshrc: zsh/zshrc_work
      ~/.config/alacritty/alacritty.toml: alacritty/alacritty_work.toml
-     ~/.config/alacritty/themes/catppuccin-mocha.toml: alacritty/themes/catppuccin-mocha.toml
-     ~/.config/alacritty/icons/com.alacritty.Alacritty.svg: alacritty/icons/com.alacritty.Alacritty.svg
      ~/.config/starship.toml: starship/starship_work.toml
      ~/.profile: bash/profile_work
      ~/.bashrc: bash/bashrc_work

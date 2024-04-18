@@ -99,8 +99,11 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
+# From Carapace Setup instructions
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense'
+
 # Add User specific path segments (appended)
-$env.PATH = ($env.PATH | append "/usr/local/bin" | append '~/.cargo/bin' | append '~/.krew/bin' | append '.config/carapace/bin')
+$env.PATH = ($env.PATH | append "/usr/local/bin" | append '~/.cargo/bin' | append '~/.krew/bin' | append '.config/carapace/bin' | append '/opt/homebrew/bin' )
 
 # Add System specific path segments (prepended)
 $env.PATH = ($env.PATH | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin" | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin" | prepend "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin" | prepend "/System/Cryptexes/App/usr/bin")
@@ -127,4 +130,8 @@ def ls [] {eza -alF --color=always --sort=size | grep -v /}
 def lt [] {eza -al --sort=modified}
 
 # Load external alias files
-#source ./aliases/git.nu
+source $"($nu.default-config-dir)/../aliases/git.nu"
+source $"($nu.default-config-dir)/../aliases/kubernetes.nu"
+
+$env.ZELLIJ_AUTO_ATTACH = "true"
+$env.ZELLIJ_AUTO_EXIT = "true"
