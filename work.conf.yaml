@@ -7,19 +7,18 @@
 - clean: ['~']
 
 - link:
+     ~/.bashrc: bash/bashrc_work
+     ~/.profile: bash/profile_work
+     ~/.gitconfig: git/gitconfig_work
+     ~/.tmux.conf: tmux/tmux_work.conf
      ~/.zshrc: zsh/zshrc_work
+     ~/.zsh_plugins.txt: antidote/zsh_plugins_work.txt
      ~/.config/alacritty/alacritty.toml: alacritty/alacritty_work.toml
      ~/.config/starship.toml: starship/starship_work.toml
-     ~/.profile: bash/profile_work
-     ~/.bashrc: bash/bashrc_work
-     ~/.gitconfig: git/gitconfig_work
-     ~/.ssh/config: ssh/config_work
-     ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
-     ~/Library/Application Support/nushell: nushell/work
-     ~/.zsh_plugins.txt: antidote/zsh_plugins_work.txt
-     ~/.tmux.conf: tmux/tmux_work.conf
      ~/.config/wezterm/wezterm.lua: wezterm/wezterm_work.lua
      ~/.config/zellij/config.kdl: zellij/config_work.kdl
+     ~/.ssh/config: ssh/config_work
+     ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
      ~/Library/Application Support/nushell: nushell/work
 
 - create:

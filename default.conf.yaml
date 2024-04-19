@@ -8,10 +8,10 @@
 - link:
     ~/.config/helix: helix
     ~/.config/uptime.sh: starship/uptime.sh
+    ~/.config/nvim: nvim
     ~/.config/zellij/themes/nord.kdl: zellij/themes/nord.kdl
     ~/.config/zellij/themes/tokyo-night.kdl: zellij/themes/tokyo-night.kdl
     ~/.gitignore: git/gitignore
-    ~/.config/nvim: nvim
 
 - create:
     - ~/.config/alacritty/

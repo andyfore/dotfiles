@@ -7,23 +7,23 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zsh/zshrc_personal
-    ~/.config/alacritty/alacritty.toml: alacritty/alacritty_personal.toml
-    ~/.config/starship.toml: starship/starship_personal.toml
-    ~/.profile: bash/profile_personal
     ~/.bashrc: bash/bashrc_personal
     ~/.gitconfig: git/gitconfig_personal
-    ~/.ssh/config: ssh/config_personal
-    ~/.config/lazygit/config.yml: lazygit/config_personal.yml
-    ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
+    ~/.profile: bash/profile_personal
     ~/.tmux.conf: tmux/tmux_personal.conf
+    ~/.zsh_plugins.txt: antidote/zsh_plugins_personal.txt
+    ~/.zshrc: zsh/zshrc_personal
+    ~/.config/alacritty/alacritty.toml: alacritty/alacritty_personal.toml
+    ~/.config/carapace: ~/Library/Application Support/carapace
+    ~/.config/lazygit/config.yml: lazygit/config_personal.yml
+    ~/.config/starship.toml: starship/starship_personal.toml
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm_personal.lua
     ~/.config/zellij/config.kdl: zellij/config_personal.kdl
+    ~/.ssh/config: ssh/config_personal
     ~/Library/Application Support/nushell: nushell/personal
-    ~/.config/carapace: ~/Library/Application Support/carapace
 
 - create:
-    - ~/.cache/starship
     - ~/.config/alacritty
     - ~/.config/alacritty/themes
     - ~/.config/alacritty/icons
+    - ~/.cache/starship

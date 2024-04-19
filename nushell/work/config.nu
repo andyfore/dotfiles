@@ -141,7 +141,7 @@ let light_theme = {
 #     carapace $spans.0 nushell ...$spans | from json
 # }
 
-#use ~/Documents/Development/repos/nu_scripts/themes/themes/catppuccin-mocha.nu
+use ~/Documents/Development/repos/nu_scripts/themes/nu-themes/nord.nu
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
