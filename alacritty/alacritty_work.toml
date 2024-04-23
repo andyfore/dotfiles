@@ -34,3 +34,27 @@ lines = 60
 [window.position]
 x = 80
 y = 100
+
+[[keyboard.bindings]]
+key = "NumpadEnter"
+chars = "\r"
+
+[[hints.enabled]]
+binding = { key = "U", mods = "Control|Shift" }
+command = "xdg-open"
+hyperlinks = true
+mouse.enabled = true
+mouse.mods = "Control"
+post_processing = true
+persist = false
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩‘]+"
+
+[[keyboard.bindings]]
+action = "ReceiveChar"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ReceiveChar"
+key = "N"
+mods = "Command"

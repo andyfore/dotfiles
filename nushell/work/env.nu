@@ -120,6 +120,7 @@ $env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-pat
 alias code = cd ~/Documents/Development/code/
 alias repo = cd ~/Documents/Development/repos/
 alias nv = nvim .
+alias scooby = ssh afore@scooby4.web.com
 
 # User defined custom commands for eza
 def ld [] {eza -lD}
