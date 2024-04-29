@@ -142,6 +142,7 @@ let light_theme = {
 # }
 
 use ~/Documents/Development/repos/nu_scripts/themes/themes/tokyo-night.nu
+# use ~/Documents/Development/repos/nu_scripts/themes/themes/catppuccin-machiatto.nu
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
@@ -230,6 +231,7 @@ $env.config = {
 
     #color_config: $dark_theme # if you want a more interesting theme, you can replace the empty record with `$dark_theme`, `$light_theme` or another custom record
     color_config: (tokyo-night)
+    # color_config: (catppuccin-mocha)
     use_grid_icons: true
     footer_mode: "25" # always, never, number_of_rows, auto
     float_precision: 2 # the precision for displaying floats in tables

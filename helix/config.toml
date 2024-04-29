@@ -1,9 +1,11 @@
-theme = "tokyonight"
+#theme = "tokyonight"
+theme = "catppuccin_macchiato"
 
 [editor]
 line-number = "relative"
 cursorline = true
 color-modes = true
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
