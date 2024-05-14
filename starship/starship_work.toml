@@ -37,6 +37,8 @@ $line_break\
 $character\
 """
 
+command_timeout = 1000
+
 # Sets user-defined palette
 palette = "catppuccin_mocha"
 
