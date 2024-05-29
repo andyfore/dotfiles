@@ -119,8 +119,10 @@ $env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-pat
 
 alias code = cd ~/Documents/Development/code/
 alias repo = cd ~/Documents/Development/repos/
-alias nv = nvim .
 alias scooby = ssh afore@scooby4.web.com
+alias pt = ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/prod-cluster-session -fNa -L 6443:atl4k8s01api.registeredsite.com:6443 afore@scooby4-priv.web.com
+alias uap = ssh afore@jump1.infra.atl1.eigbox.com
+alias dt = ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com
 
 # User defined custom commands for eza
 def ld [] {eza -lD}
