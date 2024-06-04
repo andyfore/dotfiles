@@ -46,8 +46,8 @@ palette = "catppuccin_mocha"
 # Note the use of Catppuccin color 'maroon'
 #success_symbol = "[[♥](green) ❯](maroon)"
 #error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
-success_symbol = '[ ➜](green) '
+#vimcmd_symbol = "[❮](green)"
+success_symbol = "[[ ➜](green) ❯](maroon)"
 error_symbol = '[ ➜](red) '
 
 [username]

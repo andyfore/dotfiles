@@ -96,6 +96,9 @@ $env.NU_PLUGIN_DIRS = [
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
 
+# Set LS_COLORS using https://github.com/sharkdp/vivid/tree/master
+$env.LS_COLORS = (vivid generate catppuccin-mocha | str trim)
+
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 

@@ -1,4 +1,4 @@
-import = ["~/Documents/Development/repos/alacritty-theme/themes/nord.toml"]
+import = ["~/Documents/Development/repos/alacritty-theme/themes/catppuccin_mocha.toml"]
 
 [font]
 size = 12.0
@@ -25,7 +25,7 @@ args = ["-l"]
 
 [window]
 #decorations = "none"
-opacity = 0.85
+opacity = 0.98
 
 [window.dimensions]
 columns = 200
