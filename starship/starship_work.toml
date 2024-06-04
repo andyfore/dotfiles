@@ -47,7 +47,7 @@ palette = "catppuccin_mocha"
 #success_symbol = "[[♥](green) ❯](maroon)"
 #error_symbol = "[❯](red)"
 #vimcmd_symbol = "[❮](green)"
-success_symbol = "[[ ➜](green) ❯](maroon)"
+success_symbol = "[ ➜](green) "
 error_symbol = '[ ➜](red) '
 
 [username]
