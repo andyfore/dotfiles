@@ -141,7 +141,7 @@ let light_theme = {
 #     carapace $spans.0 nushell ...$spans | from json
 # }
 
-use ~/Documents/Development/repos/nu_scripts/themes/nu-themes/nord.nu
+use ~/Documents/Development/repos/nu_scripts/themes/nu-themes/catppuccin-mocha.nu
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
@@ -926,6 +926,8 @@ $env.config = {
         }
     ]
 }
+
+$env.LS_COLORS = (vivid generate catppuccin-mocha | str trim)
 
 # carapace_completer
 source ~/.cache/carapace/init.nu
