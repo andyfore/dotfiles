@@ -1,0 +1,4 @@
+[[grammar]]
+name = "nu"
+#source = { git = "https://github.com/nushell/tree-sitter-nu", rev = "<revision hash or main>" }
+source = { git = "https://github.com/nushell/tree-sitter-nu", rev = "main" }
