@@ -115,7 +115,7 @@ $env.EDITOR = "nvim"
 $env.RUSTC_WRAPPER = "sccache"
 
 # Set LG_CONFIG_FILE
-$env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-path)/Documents/Development/repos/lazygit/themes-mergable/mocha/sky.yml"
+$env.LG_CONFIG_FILE = $"($nu.home-path)/.config/lazygit/config.yml,($nu.home-path)/Documents/Development/repos/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"
 
 alias code = cd ~/Documents/Development/code/
 alias repo = cd ~/Documents/Development/repos/
@@ -123,6 +123,7 @@ alias scooby = ssh afore@scooby4.web.com
 alias pt = ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/prod-cluster-session -fNa -L 6443:atl4k8s01api.registeredsite.com:6443 afore@scooby4-priv.web.com
 alias uap = ssh afore@jump1.infra.atl1.eigbox.com
 alias dt = ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluster-session -fNa -L 6443:api.atl4devplatk8s01.registeredsite.com:6443 afore@scooby4-priv.web.com
+alias ociconn = oci session authenticate --region us-ashburn-1 --tenancy-name nfsandbox --profile-name DEFAULT
 
 # User defined custom commands for eza
 def ld [] {eza -lD}
