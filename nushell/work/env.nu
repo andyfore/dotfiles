@@ -136,6 +136,7 @@ def elt [] {eza -al --sort=modified}
 # Load external alias files
 source $"($nu.default-config-dir)/../aliases/git.nu"
 source $"($nu.default-config-dir)/../aliases/kubernetes.nu"
+source $"($nu.default-config-dir)/../aliases/terraform.nu"
 
 $env.ZELLIJ_AUTO_ATTACH = "true"
 $env.ZELLIJ_AUTO_EXIT = "true"
