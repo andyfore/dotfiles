@@ -126,12 +126,12 @@ alias dt = ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/devplat-cluste
 alias ociconn = oci session authenticate --region us-ashburn-1 --tenancy-name nfsandbox --profile-name DEFAULT
 
 # User defined custom commands for eza
-def ld [] {eza -lD}
-def lf [] {eza -lF --color=always | grep -v /}
-def lh [] {eza -dl .* --group-directories-first}
-def ll [] {eza -al --group-directories-first}
-def ls [] {eza -alF --color=always --sort=size | grep -v /}
-def lt [] {eza -al --sort=modified}
+def eld [] {eza -lD}
+def elf [] {eza -lF --color=always | grep -v /}
+def elh [] {eza -dl .* --group-directories-first}
+def ell [] {eza -al --group-directories-first}
+def els [] {eza -alF --color=always --sort=size | grep -v /}
+def elt [] {eza -al --sort=modified}
 
 # Load external alias files
 source $"($nu.default-config-dir)/../aliases/git.nu"
