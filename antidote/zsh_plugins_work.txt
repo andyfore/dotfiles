@@ -4,12 +4,12 @@
 sparsick/ansible-zsh
 se-jaeger/zsh-activate-py-environment
 webyneter/docker-aliases
-andyfore/zsh-terraform
+# andyfore/zsh-terraform
 Dbz/kube-aliases
 
 # popular fish-like plugins
 #mattmc3/zfunctions
-#zsh-users/zsh-autosuggestions
+zsh-users/zsh-autosuggestions
 #zsh-users/zsh-history-substring-search
 
 # Application specific
