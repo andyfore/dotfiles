@@ -5,6 +5,9 @@ SAVEHIST=1000
 
 bindkey -v
 
+# misc variables used in config
+LG_THEME_PATH="/Users/afore/Documents/Development/repos/catppuccin-laygit/themes-mergable/mocha/sapphire.yml"
+
 # homebrew completions
 if type brew &>/dev/null
 then
@@ -54,15 +57,15 @@ antidote load
 # Aliases for shell
 alias code="cd ~/Documents/Development/code/"
 alias repo="cd ~/Documents/Development/repos/"
-alias nv="nvim ."
+alias ociconn="oci session authenticate --region us-ashburn-1 --tenancy-name nfsandbox --profile-name DEFAULT"
 
 # Aliases for eza
-alias ld='eza -lD'
-alias lf='eza -lF --color=always | grep -v /'
-alias lh='eza -dl .* --group-directories-first'
-alias ll='eza -al --group-directories-first'
-alias ls='eza -alF --color=always --sort=size | grep -v /'
-alias lt='eza -al --sort=modified'
+# alias ld='eza -lD'
+# alias lf='eza -lF --color=always | grep -v /'
+# alias lh='eza -dl .* --group-directories-first'
+# alias ll='eza -al --group-directories-first'
+# alias ls='eza -alF --color=always --sort=size | grep -v /'
+# alias lt='eza -al --sort=modified'
 
 # Aliases for ssh
 alias pt='ssh -M -F none -o "ExitOnForwardFailure yes" -S ~/.ssh/prod-cluster-session -fNa -L 6443:atl4k8s01api.registeredsite.com:6443 afore@scooby4-priv.web.com'
@@ -74,7 +77,7 @@ alias uap='ssh afore@jump1.infra.atl1.eigbox.com'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH:$HOME/.rd/bin"
 export RUSTC_WRAPPER="sccache"
 export XDG_CONFIG_HOME="$HOME/.config"
-export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$HOME/Documents/Development/repos/lazygit_catppuccin_themes/themes-mergable/mocha/sky.yml"
+export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$LG_THEME_PATH"
 export LDFLAGS="-L/opt/homebrew/opt/readline/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/readline/include"
 
@@ -109,3 +112,6 @@ source <(carapace _carapace)
 
 # atuin support
 eval "$(atuin init zsh)"
+
+# start zellij
+eval "$(zellij setup --generate-auto-start zsh)"
