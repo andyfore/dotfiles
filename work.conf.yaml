@@ -19,7 +19,6 @@
      ~/.config/zellij/config.kdl: zellij/config_work.kdl
      ~/.ssh/config: ssh/config_work
      ~/Library/Application Support/lazygit/config.yml: lazygit/config_work.yml
-     ~/Library/Application Support/nushell: nushell/work
 
 - create:
    - ~/.config/alacritty

@@ -20,9 +20,8 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [shell]
-# program = "/opt/homebrew/bin/nu"
-program = "/opt/homebrew/bin/zsh"
-args = ["-l"]
+program = "/opt/homebrew/bin/zellij"
+#args = ["-l"]
 
 [window]
 #decorations = "none"
