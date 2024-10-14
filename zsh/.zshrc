@@ -13,8 +13,6 @@ export LDFLAGS="-L/opt/homebrew/opt/readline/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/readline/include"
 export LG_THEME_PATH="/Users/afore/Documents/Development/repos/catppuccin-laygit/themes-mergable/mocha/sapphire.yml"
 export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$LG_THEME_PATH"
-export JIRA_AUTH_TYPE="bearer"
-export JIRA_API_TOKEN="MTQ3NDMyMzAxNzk5OkZWVit7LYwKZmkc9o2dHg0mqwAe"
 
 # homebrew completions
 if type brew &>/dev/null
