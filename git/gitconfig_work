@@ -1,7 +1,0 @@
-[user]
-	name = Andrew Fore
-	email = andrew.fore@newfold.com
-[core]
-        excludesfile = /Users/afore/.gitignore
-[credential]
-	helper = keepassxc --git-groups
