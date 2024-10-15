@@ -223,3 +223,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# neovim lazy
+lazy-lock.json
+lazyvim.json
