@@ -1,2 +1,2 @@
-require("andyfore.core")
-require("andyfore.lazy")
+require("afore.core")
+require("afore.lazy")
